@@ -1,5 +1,6 @@
 import axios from "axios";
 import Head from "next/head";
+import { Badge } from "@nextui-org/react";
 
 const Home = ({ subjects }) => {
   return (
@@ -15,7 +16,7 @@ const Home = ({ subjects }) => {
           <ul>
             {subjects.map((subject) => (
               <li key={subject.id}>
-                <p>{subject.name}</p>
+                <Badge>{subject.name}</Badge>
               </li>
             ))}
           </ul>
